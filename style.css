@@ -1,0 +1,67 @@
+html {
+    font-size: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#pil_1 {
+    top: 85vw;
+    left: 2vw;
+    height: 34vw;
+    width: 12vw;
+    background-image: url(splash_billeder/pil.svg);
+    background-size: cover;
+    position: absolute;
+
+}
+
+#pil_2 {
+    top: 85vw;
+    right: 2vw;
+    height: 34vw;
+    width: 12vw;
+    background-image: url(splash_billeder/pil.svg);
+    background-size: cover;
+    position: absolute;
+    transform: rotate(180deg)
+}
+
+#forside {
+    width: 100%;
+    height: 100%;
+    background-image: url(splash_billeder/forside.svg);
+    background-size: cover;
+    position: absolute;
+}
+
+#web {
+    width: 100%;
+    height: 100%;
+    background-image: url(splash_billeder/web_01.svg);
+    background-size: cover;
+    position: absolute;
+}
+
+#ui {
+    width: 100%;
+    height: 100%;
+    background-image: url(splash_billeder/ui.svg);
+    background-size: cover;
+    position: absolute;
+}
+
+#animation {
+    width: 100%;
+    height: 100%;
+    background-image: url(splash_billeder/animation.svg);
+    background-size: cover;
+    position: absolute;
+}
+
+/*-------- animationer ---------*/
+.hide {
+    visibility: hidden;
+}
