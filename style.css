@@ -1,3 +1,21 @@
+/* generelle indstillinger*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0%;
+
+}
+
+img {
+    width: 100%;
+}
+
+/* generelle indstillinger SLUT*/
+
+
+/*-------slide kode forside-------*/
 body,
 #slider,
 .wrap .slide,
@@ -13,14 +31,20 @@ body,
 .slide-content {
     display: flex;
     flex-direction: column;
+
+    position: relative;
+    left: 20vw;
+    top: 10vw;
+
+    /*align-items: center;
     justify-content: center;
-    align-items: center;
-    text-align: center;
+    text-align: center;*/
 }
 
 .slide-content p {
-    font-size: 5rem;
+    font-size: 3rem;
     color: #fff;
+
 }
 
 .wrap {
@@ -34,14 +58,26 @@ body,
 }
 
 .slide1 {
-    background-image: url(splash_billeder/forside.svg)
+    background-image: url(splash_billeder/test.svg)
 }
 
 .slide2 {
-    background-image: url(splash_billeder/web_01.svg)
+    background-image: url(splash_billeder/Artboard%2013.svg)
 }
 
 .slide3 {
+    background-image: url(splash_billeder/ui.svg)
+}
+
+.slide4 {
+    background-image: url(splash_billeder/Artboard%206.svg)
+}
+
+.slide5 {
+    background-image: url(splash_billeder/ui.svg)
+}
+
+.slide6 {
     background-image: url(splash_billeder/ui.svg)
 }
 
@@ -70,25 +106,106 @@ body,
     margin-right: 30px;
 }
 
+.button {
+    /*text-align: center;
+    margin-bottom: 1vw;*/
 
-
-
-
-
-
-/*.carousel_container {
-    width: 100%;
-    height: 100%;
-    border: 5px solid black;
+    left: 10vw;
+    top: 10vw:
 }
 
-.carousel_slide {
+.button a {
+    color: black;
+    text-decoration: none;
+    font-size: 2rem;
+
+
+
+}
+
+
+
+/*-------slide kode forside SLUT-------*/
+
+/******* om *******/
+#om {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+#om .box {
+    position: relative;
+    text-align: center;
+    margin-left: 35vw;
+    padding-top: 30px;
+    background-color: aquamarine;
+    width: 25%;
+    height: 100px;
+
+}
+
+#om .sectionwrapper {
     display: flex;
-    width: 100vw;
-    height: 56vw;
+    flex-wrap: wrap-reverse;
 }
 
+#om .col {
+    flex-grow: 1;
+    flex-basis: 400px;
+}
 
+/******* om slut*******/
+
+/******* web_top *******/
+
+#web_top {}
+
+#web_top .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+
+#web_top .col {
+
+    flex-grow: 1;
+    flex-basis: 500px;
+
+}
+
+#web_top .img :hover {
+    opacity: 0.3;
+}
+
+/******* web_top SLUT *******/
+
+/******* ux_top *******/
+
+#ux_top {}
+
+#ux_top .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+
+#ux_top .col_wide {
+
+    flex-grow: 2;
+    flex-basis: 600px;
+
+}
+
+#ux_top .col_narrow {
+
+    flex-grow: 1;
+    flex-basis: 300px;
+
+}
+
+#ux_top .img :hover {
+    opacity: 0.3;
+}
+
+/******* ux_top SLUT *******/
 
 
 
@@ -113,40 +230,3 @@ body,
     position: absolute;
     transform: rotate(180deg)
 }
-
-#forside {
-    width: 100%;
-    height: 100%;
-    background-image: url(splash_billeder/forside.svg);
-    background-size: cover;
-    position: absolute;
-}
-
-#web {
-    width: 100%;
-    height: 100%;
-    background-image: url(splash_billeder/web_01.svg);
-    background-size: cover;
-    position: absolute;
-}
-
-#ui {
-    width: 100%;
-    height: 100%;
-    background-image: url(splash_billeder/ui.svg);
-    background-size: cover;
-    position: absolute;
-}
-
-animation {
-    width: 100%;
-    height: 100%;
-    background-image: url(splash_billeder/animation.svg);
-    background-size: cover;
-    position: absolute;
-}
-
-/*-------- animationer ---------
-.hide {
-    visibility: hidden;
-}*/
