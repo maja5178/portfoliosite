@@ -9,5 +9,12 @@ function navShow() {
 
 function burgerClick() {
     console.log("burgerClick");
+    document.querySelector('.nav_links').classList.toggle("show");
+
     document.querySelector('.nav_links').classList.toggle("hide");
+
+    document.querySelector('#nav').classList.toggle("color");
+
+
+
 }

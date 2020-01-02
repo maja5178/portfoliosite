@@ -23,8 +23,14 @@ nav {
     justify-content: space-around;
     align-items: center;
     min-height: 5vw;
-    background-color: white;
+    /*background-color: white;*/
     font-family: ;
+}
+
+.nav_right {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .logo {
@@ -32,16 +38,19 @@ nav {
     text-transform: uppercase;
     letter-spacing: 5px;
     font-size: 20px;
+    text-decoration: none;
 }
 
 .nav_links {
     display: flex;
     justify-content: space-around;
-    width: 40%
+
 }
 
 .nav_links li {
     list-style: none;
+    background-color: white;
+    margin-right: 15px;
 }
 
 .nav_links a {
@@ -49,11 +58,13 @@ nav {
     text-decoration: none;
     letter-spacing: 3px;
     font-weight: bold;
+    font-size: 1.2rem;
+
 }
 
-.burger {
+/*.burger {
     display: none;
-}
+}*/
 
 .burger div {
     width: 25px;
@@ -62,6 +73,38 @@ nav {
     margin: 5px;
 
 
+}
+
+.forside_color a:hover {
+    color: aqua;
+}
+
+.web_color a:hover {
+    color: pink;
+}
+
+.ux_color a:hover {
+    color: greenyellow;
+}
+
+.animation_color a:hover {
+    color: skyblue;
+}
+
+.indhold_color a:hover {
+    color: plum;
+}
+
+.om_color a:hover {
+    color: yellow;
+}
+
+.hide {
+    visibility: hidden
+}
+
+.color {
+    background-color: white;
 }
 
 /*-------slide kode forside-------*/
@@ -293,15 +336,15 @@ body,
         display: flex;
         flex-direction: column;
         align-items: center;
-        visibility: hidden;
+        transform: translateY(-110vw);
+        left: 0px;
 
     }
 
-    .burger {
-        display: block;
-    }
+
 }
 
-.hide {
-    visibility: inherit;
+.show {
+    transform: translateY(0%);
+    transition: transform 0.7s ease-in;
 }
